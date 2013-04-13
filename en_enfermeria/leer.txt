@@ -1,0 +1,4 @@
+la base de datos se llama miproyecto
+creas una mase de datos que se llame miproyecto
+luego hay importas el documento que dice miproyecto.sql y se te 
+creara una tabla llamada ficha medica ..

@@ -1,0 +1,5 @@
+<?
+function popo(){
+  //  echo '';
+}
+?>

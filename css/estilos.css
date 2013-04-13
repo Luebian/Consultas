@@ -1,0 +1,137 @@
+body {
+	
+	font-family: Calibri, Arial, Georgia;
+	background-image: url(../images/cielo.jpg);  
+	background-position: center;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+}
+
+#web  {	 /*el gatito representa el div de index*/         
+		width:900px;
+		margin:10px auto;
+		background-color:#FFFFFF;
+		
+		}
+
+#cabecera {
+	height: 150px;
+	background: url(../images/retosweb.png) no-repeat left;
+	background-color: #FFFFFF;
+}
+#barra{
+	height:40px;
+	background-color:#87CEFA;
+	border: 0px outset #87CEFA;
+}
+.menubarra {
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+	color: #000;
+}
+.menubarra > li{
+	float: left;
+	background-color:#1E90FF;
+	margin: 1px;
+
+}
+.menubarra li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: block;
+}
+.menubarra li a:hover{
+	background-color: #ADD8E6;
+
+}
+li ul {
+	display:none;
+	position: absolute;
+}
+li:hover > ul {
+	display: block;
+	
+}
+li:hover li {
+	float: none;
+	
+}
+.menubarra li ul li {
+	position: relative;
+}
+
+.menubarra li ul li {
+/*right:-140px;
+top:0;*/
+position: relative;
+}
+
+#contenido{
+	width: 100%;
+	background-color: white;
+	min-height: 600px;
+	text-align: justify;
+}
+/*****************TABLA***************************/
+.titulo{
+	font-family: Arial, cursive, sans-serif;
+	font-size: 24px;
+	color: #13a;
+	text-align: center;
+	margin-top: 50px;
+}
+.tabla {
+	font-size: 11px;
+	border-style: solid;
+	border-color: #666666;
+	border-width: 0px;
+}
+.tdatos{
+		font-size: 16px;
+		font-weight: bold;
+		color:#000 ;
+		background-color: #BDD2FF;
+		border-style: solid;
+		border-color: #cccccc;
+		border-width: 1px;
+
+}
+.dtabla {
+	font-size: 11px;
+		font-weight: bold;
+		color: #000000;
+		background-color: #FFFFFF;
+		font-family:arial black;
+		font-size: 9pt;
+		border-style: solid;
+		border-color: #cccccc;
+		border-width: 1.5px;
+        margin: 4px 50px 3px 50px;
+}
+.datos {
+	border-style: solid;
+		border-color: #E30BEE;
+		border-width: 1px;
+		font-size: 11px;
+		font-weight: bold;
+}
+.cdatos {
+	font-size: 11px;
+		font-weight: bold;
+		color:#000;
+		background-color: #ffffff;
+}
+#centro{
+	margin: 80px;
+	width:800px;
+}
+#pie {
+	height: 40px;
+	background-color: #FFFFFF;
+	clear: both;
+	text-align: center;
+	padding-top: 5px;
+	
+}

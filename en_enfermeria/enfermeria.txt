@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Terapia Ocupacional</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<body>
+    <div id="web">
+        
+        
+        <div id="cabecera">
+            
+        </div>
+        
+        <div id="barra">
+            <ul class="menubarra">
+                <li><a href="?pagina=ficha">Ficha Medica</a></li>
+                <li><a href="#">Evaluacion ADVH</a>
+                    <ul class="menubarra">
+                        <li><a href="?pagina=formato">Formato de Calidad</a>
+               
+                        <li><a href="?pagina=informe">Informe de Incidencias</a>
+                        <ul class="menubarra">
+                            <li><a href="?pagina=caract_aliment
+                            ">Caract. nueva</a></li>
+                        </ul>
+                        </li>
+                            </ul>
+        </div>
+        
+        <div id="contenido">
+            <div id="centro">
+                <?php                
+                require('herramientas/paginas.php');?>
+            </div>
+            
+
+        </div>
+        
+        <div id="pie">
+            RETOS A.B.P<br>
+            SIEB
+            Instituto Tecnologico de Nuevo León
+        </div>
+             
+    </div>
+
+</body>
+</html>

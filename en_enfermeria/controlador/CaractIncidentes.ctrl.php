@@ -1,0 +1,1 @@
+<?php//echo getcwd(); obtiene la ruta del archivo php en ejecucionrequire('modelo/CaractIncidentes.mdl.php');require('vista/CaractIncidentes.vst.php');?>

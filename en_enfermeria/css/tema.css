@@ -1,0 +1,126 @@
+body{
+font-family:Arial,Vedena,Georgia;
+background:url(../Imagenes/cielo.jpg);
+}
+
+#web{
+width:970px;
+margin:10px auto;
+}
+
+#cabecera{
+height:150px;
+background: url(../Imagenes/retos.png) no-repeat left;
+background-color:#FFFFFF;
+}
+
+#barraHorizontal{
+height:20px;
+background-color:#87CEFA;
+}
+
+.menuHorizontal{
+list-style-type:none;
+margin-top:6px;
+margin-left: 50px;
+}
+
+.menuHorizontal > li{
+display:inline-block;
+background-color:#0174DF;
+padding:5px;
+cursor:pointer;
+margin: 3px;
+position: relative;
+float: left;
+}
+.menuHorizontal li a {
+	color: #ADD8E6;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: block;
+}
+.menuHorizontal li a:hover{
+	background-color:#FFFFFF;
+}
+li ul {
+	display:none;
+	position: absolute;
+}
+li:hover > ul {
+	display:block;
+}
+li:hover li {
+	float: none;
+}
+
+
+#principal{
+	
+}
+#Contenido{
+width:100%;
+background-color:#FFFFFF;
+min-height:600px;
+text-align:justify;
+}
+/*****************TABLA***************************/
+.titulo{
+	font-family: Arial, cursive, sans-serif;
+	font-size: 24px;
+	color: #13a;
+	text-align: center;
+	margin-top: 50px;
+}
+.tabla {
+	font-size: 11px;
+	border-style: solid;
+	border-color: #666666;
+	border-width: 0px;
+}
+.tdatos{
+		font-size: 16px;
+		font-weight: bold;
+		color:#000 ;
+		background-color: #BDD2FF;
+		border-style: solid;
+		border-color: #cccccc;
+		border-width: 1px;
+
+}
+.dtabla {
+	font-size: 11px;
+		font-weight: bold;
+		color: #000000;
+		background-color: #FFFFFF;
+		font-family:arial black;
+		font-size: 9pt;
+		border-style: solid;
+		border-color: #cccccc;
+		border-width: 1.5px;
+        margin: 4px 50px 3px 50px;
+}
+.datos {
+	border-style: solid;
+		border-color: #E30BEE;
+		border-width: 1px;
+		font-size: 11px;
+		font-weight: bold;
+}
+.cdatos {
+	font-size: 11px;
+		font-weight: bold;
+		color:#000;
+		background-color: #ffffff;
+}
+#cont{
+    margin: 50px;
+    width:100%;
+}
+
+#pie{
+height:40px;
+background-color:#0174DF;
+text-align:center;
+padding-top:3px
+}
