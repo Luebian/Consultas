@@ -1,8 +1,8 @@
 <?php
 $servidor="localhost";
-$usuario="root";
-$contrasenha="moon";
-$BD = "retos";
+$usuario="sieb";
+$contrasenha="sieb";
+$BD = "sieb";
 
 $conexion = mysql_connect($servidor,$usuario,$contrasenha);
 if (!$conexion) {

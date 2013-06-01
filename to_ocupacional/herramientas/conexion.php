@@ -1,7 +1,7 @@
 <?php
 $servidor="localhost";
-$usuario="root";
-$contrasenha="prograweb";
+$usuario="sieb";
+$contrasenha="sieb";
 $BD = "sieb";
 
 $conexion = mysql_connect($servidor,$usuario,$contrasenha);

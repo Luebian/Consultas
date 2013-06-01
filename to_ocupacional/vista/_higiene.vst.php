@@ -1,3 +1,4 @@
+<a href="?pagina=agregar_caracteristica&id_modulo=<?php echo $_GET["id_modulo"];?>">Agregar</a> 
 <form name="busqueda" action="higiene.mdl.php" method="post" enctype="multipart/form-data">
 <table width="700" align="center" class="tabla">
 <tr>
@@ -44,10 +45,10 @@ while($to_evaluaciones=mysql_fetch_assoc($registros)) {
 	echo $to_evaluaciones["nom_evaluacion"];
 	?>
 	</th>
-	<th class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["nom_evaluacion"]; ?>"></th>
-	<td class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["nom_evaluacion"]; ?>"></td>
-	<td class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["nom_evaluacion"]; ?>"></td>
-	<td class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["nom_evaluacion"]; ?>"></td>
+	<th class="dtabla"><input type="radio" name="evaluacion" value="0"></th>
+	<td class="dtabla"><input type="radio" name="evaluacion" value="1"></td>
+	<td class="dtabla"><input type="radio" name="evaluacion" value="2"></td>
+	<td class="dtabla"><input type="radio" name="evaluacion" value="3"></td>
 	</tr>
 
 <?php

@@ -1,5 +1,5 @@
 
-<form "method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
 <table bgcolor="white" border="0" cellpadding="4" width="700" align="center" class="tabla">
 
 
@@ -9,12 +9,12 @@
         <h3>DATOS DE FAMILIA DEL BENEFICIARIO</h3></td>
 </tr>
 <?php
-if (isset($_POST))
+if (!empty($_POST))
 {
     $familia->registro();
-    //if ($tsocial->error == 0) {
-      //  print 'No se pudieron insertar datos. Revise la informacion';
-    //}
+    if ($tsocial->error == 0) {
+        print 'No se pudieron insertar datos. Revise la informacion';
+    }
 }
 ?>
 

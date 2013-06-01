@@ -1,9 +1,13 @@
  <?php                
-                require('herramientas/conexion.php');?>
+                require('../conexion.php');?>
 <html>
 <head>
     <title>Terapia Ocupacional</title>
 <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+<link href="../css/estilos.css" type="text/css" rel="stylesheet"/>
+  <link href="../css/jMenu.jquery.css" type="text/css" rel="stylesheet"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jMenu.jquery.js"></script>
 <body>
     <div id="web">
         

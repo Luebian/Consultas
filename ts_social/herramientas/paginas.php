@@ -2,7 +2,7 @@
 $pagina=(isset($_GET['pagina']))?$_GET['pagina']:'';
 $pagina='controlador/'.$pagina.'.ctrl.php';
 if(!file_exists($pagina)){//si existe la ruta   
-    $pagina='controlador/tsocial.ctrl.php';//retorna si la ruta es real
+    $pagina='controlador/default.ctrl.php';//retorna si la ruta es real
 }
 require($pagina);
 ?>

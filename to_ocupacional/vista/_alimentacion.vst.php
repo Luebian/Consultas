@@ -1,5 +1,19 @@
 <a href="?pagina=agregar_caracteristica&id_modulo=<?php echo $_GET["id_modulo"];?>">Agregar</a> 
- 
+<form name="advh" action="" method="post">
+ <table width="700" align="center" class="tabla">
+<tr>
+	<td class="tdatos" colspan="2" align="center"><h3>DATOS DEL PACIENTE</h3></td>
+</tr>
+<tr>
+	<td class="tdatos">Num_Paciente:</td>
+	<td class="dtabla"><input type="text" name="num_paciente" value="<?php echo $_REQUEST["num_paciente"]; ?>" size="20" /></td>
+</tr>
+
+<tr>
+	<td class="tdatos">Nombre:</td>
+	<td class="dtabla"><input type="text" name="nombre" value="<?php echo $_REQUEST["nombre"]; ?>" size="40" /></td>
+</tr>
+</table>
  <table width="700" align="center" class="tabla">
     <tr>
         <td class="tdatos"><font size="2">0 = NO LO HACE</font></td>
@@ -11,7 +25,7 @@
 
 <div class="titulo">ADVH</div><br>
 
-<form name="advh" action=".mdl.php" method="post" enctype="multipart/form-data">
+
 <table width="700" align="center" class="tabla">
     <tr>
         <th class="tdatos"><font size="4">B.ALIMENTACION</font></th>
@@ -31,10 +45,10 @@ while($to_evaluaciones=mysql_fetch_assoc($registros)) {
 	echo $to_evaluaciones["id_modulo"];
 	?>
 	</th>
-	<th class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["opciones"]; ?>"></th>
-	<td class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["opciones"]; ?>"></td>
-	<td class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["opciones"]; ?>"></td>
-	<td class="dtabla"><input type="radio" name="evaluacion<?php echo $to_evaluaciones["opciones"]; ?>"></td>
+	<th class="dtabla"><input type="radio" name="evaluacion" value="0"></th>
+	<td class="dtabla"><input type="radio" name="evaluacion" value="1"></td>
+	<td class="dtabla"><input type="radio" name="evaluacion" value="2"></td>
+	<td class="dtabla"><input type="radio" name="evaluacion" value="3"></td>
 </tr>
 
 <?php

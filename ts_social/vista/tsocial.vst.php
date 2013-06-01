@@ -7,11 +7,11 @@
 <?php
 	
 if (!empty($_POST))
-{
-    $tsocial->registro();
-    //if ($tsocial->error == 0) {
-      //  print 'No se pudieron insertar datos. Revise la informacion';
-    //}
+{print_r($_POST);
+   // $tsocial->registro();
+    if ($tsocial->error == 0) {
+        print 'No se pudieron insertar datos. Revise la informacion';
+    }
 }
 	$id=$tsocial->getID();
 

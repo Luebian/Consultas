@@ -9,7 +9,7 @@ class Trabajo
    public function __construct()
    {
 
-   $this->dbh= new PDO ("mysql:host=localhost;dbname=SIEB","root","prograweb");
+   $this->dbh= new PDO ("mysql:host=localhost;dbname=SIEB","sieb","sieb");
    }
    
    public function agregar_fucha_medica()

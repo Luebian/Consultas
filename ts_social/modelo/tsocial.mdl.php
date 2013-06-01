@@ -2,6 +2,7 @@
 
 class Tsocial {
         var $error = 0;
+    
         function getID(){
                 //Bloque de código, obtiene el último registro
             //YY48######
@@ -28,6 +29,7 @@ class Tsocial {
             $total = mysql_query($sql);
             $total = mysql_fetch_array($total);
             
+            /* validaciones
                if (($_POST["ano"] > date("Y")) || ($_POST['ano']<1900))
                 $error = 1;
                 
@@ -36,7 +38,7 @@ class Tsocial {
 
             if ($_POST["dia"] >31 || $_POST['dia']<1)
                 $error = 1;
-                
+            */    
                 return $num_bene;
         }
         function registro(){

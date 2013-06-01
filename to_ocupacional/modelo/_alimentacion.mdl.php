@@ -1,7 +1,8 @@
 <?php
 class Alimentacion {
 	function altas(){
-		$sql= "SELECT id_evaluacion, nom_evaluacion FROM to_evaluaciones where id_modulo=2";
+		$sql= "SELECT `id_modulo`, `nom_evaluacion` FROM to_caracteristicas where id_modulo='b2'";
+		
 		$reg= mysql_query($sql);
 		return $reg;
 	}

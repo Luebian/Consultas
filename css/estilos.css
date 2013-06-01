@@ -24,49 +24,7 @@ body {
 	background-color:#87CEFA;
 	border: 0px outset #87CEFA;
 }
-.menubarra {
-	margin: 0px;
-	padding: 0;
-	list-style: none;
-	color: #000;
-}
-.menubarra > li{
-	float: left;
-	background-color:#1E90FF;
-	margin: 1px;
 
-}
-.menubarra li a{
-	color: #FFFFFF;
-	text-decoration: none;
-	padding: 5px 10px;
-	display: block;
-}
-.menubarra li a:hover{
-	background-color: #ADD8E6;
-
-}
-li ul {
-	display:none;
-	position: absolute;
-}
-li:hover > ul {
-	display: block;
-	
-}
-li:hover li {
-	float: none;
-	
-}
-.menubarra li ul li {
-	position: relative;
-}
-
-.menubarra li ul li {
-/*right:-140px;
-top:0;*/
-position: relative;
-}
 
 #contenido{
 	width: 100%;
