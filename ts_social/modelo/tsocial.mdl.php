@@ -52,14 +52,16 @@ class Tsocial {
             $total=$this->getID();
             if ($noerror){
             //echo "beneficiarios/".($_FILES['userfile']['type']);
-                      $sql="INSERT INTO ts_dpersonales VALUES('{$_POST["num_bene"]}',
+                      $sql="INSERT INTO ts_dpersonales 
+                      (`id_beneficiario`, `filename`, `nombre`, `nombre2`, `apellido_p`, `apellido_m`, `fecha_nacimiento`, `lugar_nacimiento`, `sexo`, `direccion`, `telefono_casa`, `gusta_queledigan`, `nombre_persona_dirigirse`, `telefono2`, `miedos_fobias`, `gustos_preferencias`, `lo_hace_enojar`, `habilidades`, `aspectos_mejorar`)
+                      VALUES('{$_POST["num_bene"]}',
                                                             '{$filename}',
                                                          '{$_POST["nomb"]}',
                                                          '{$_POST["nomb2"]}',
                                                          '{$_POST["ape_p"]}',
                                                          '{$_POST["ape_m"]}',
-                                                         '{$_POST["dia"]}/{$_POST["mes"]}/{$_POST["ano"]}',
-                                                         '{$_POST["lu_naci"]}',
+                                                         '{$_POST["ano"]}-{$_POST["mes"]}-{$_POST["dia"]}',
+                                                         '{$_POST["lu_nac"]}',
                                                          '{$_POST["sex"]}',
                                                          '{$_POST["dire"]}',
                                                          '{$_POST["tel_cas"]}',
@@ -71,15 +73,15 @@ class Tsocial {
                                                          '{$_POST["enojar"]}',
                                                          '{$_POST["habili"]}',
                                                          '{$_POST["aspec"]}')";
-                 //echo $sql;
-                 if ($error == 0) {
+                 echo $sql;
+                 if ($this->error == 0) {
                     if(!is_writable($Destino))
                        die('No se puede escribir en el directorio.');
                     if(!move_uploaded_file($_FILES['userfile']['tmp_name'],$Destino.$filename))
-                       $error=1;
-                    //if ($error == 0) {
-                        $reg=mysql_query($sql);
-                    //}
+                       $this->error=1;
+                    if ($this->error == 0) {
+                        $this->error=mysql_query($sql);
+                    }
                
                  }
                }  

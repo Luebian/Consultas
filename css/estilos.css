@@ -93,3 +93,10 @@ body {
 	padding-top: 5px;
 	
 }
+/*****************/
+
+.error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}

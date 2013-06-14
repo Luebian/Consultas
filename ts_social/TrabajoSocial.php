@@ -10,6 +10,7 @@ require("../conexion.php");
   <link href="../css/jMenu.jquery.css" type="text/css" rel="stylesheet"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript" src="../js/jMenu.jquery.js"></script>
+        <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
  </head>       
  <body>
   <div id="web">

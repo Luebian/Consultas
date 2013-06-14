@@ -3,7 +3,7 @@
 //Array ( [modulo] => a1 [nueva] => piki [mas] => Guardar )
 class Alimentacion {
 	function altas(){
-		$sql= "SELECT id_modulo, nom_evaluacion FROM to_caracteristicas WHERE id_modulo='{$_GET['id_modulo']}'";
+		$sql= "SELECT id_modulo, nom_evaluacion FROM to_evaluaciones WHERE id_modulo='{$_GET['id_modulo']}'";
 		$reg= mysql_query($sql);
 		return $reg;
 	}
@@ -14,7 +14,7 @@ class Alimentacion {
 	}
     function guardar(){
         
-        $sql= "INSERT INTO to_caracteristicas VALUES(NULL,'{$_POST["modulo"]}',NULL,'{$_POST["nueva"]}')";
+        $sql= "INSERT INTO to_evaluaciones VALUES(NULL,'{$_POST["modulo"]}',NULL,'{$_POST["nueva"]}')";
        //echo $sql;
         $reg= mysql_query($sql);
 	return $reg;
